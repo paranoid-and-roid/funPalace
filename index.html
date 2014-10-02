@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "en" ng-app = "myApp">
+	<head>
+		<meta charset = "UTF-8" />
+		<title>Fun Palace</title>
+		<link rel="stylesheet" href="stylesheets/style.css" />
+	</head>
+																														
+	<body>
+		
+		<div id = "wrapper">
+	
+		<section id = "paintbox">									
+	
+		<nav>
+			<ul>
+				<li><a href="/#/" >Home</a></li>
+				<li><a href="/#/paint-box">Paint Box</a></li>
+				<li><a href="/#/treasure-hunt">Treasure Hunt</a></li>
+			</ul>												
+		</nav>
+		
+		<ng-view></ng-view>
+		
+		</section>
+		
+		</div>
+		
+		<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+        <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js'></script>
+        <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular-route.js'></script>        
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js/"></script>
+	</body>
+</html>

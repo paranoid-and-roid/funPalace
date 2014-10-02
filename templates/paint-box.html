@@ -1,0 +1,32 @@
+<h1>The Paint Box</h1>
+	
+<div id = "intro">
+	<p>If you're feeling artistic, simply click your mouse into the canvas below, and get sketching!!</p>
+	<p>Write something in the box below; then watch your child paint the words for you.</p>
+</div>
+	
+<form>
+	<label><em>Write in here:</em></label>
+	<input type = "text" id = "write" /><br /><br />
+</form>
+	
+<div id = "display"></div>
+	
+<div id = "colours">
+	<ul>
+		<li><img src = "images/red.png" paint="#f00"><p>Red</p></li>
+		<li><img src = "images/orange.png" paint="orange"><p>Orange</p></li>
+		<li><img src = "images/yellow.png" paint="#ff0"><p>Yellow</p></li>
+		<li><img src = "images/green.png" paint="#0f0"><p>Green</p></li>
+		<li><img src = "images/blue.png" paint="#00f"><p>Blue</p></li>
+		<li><img src = "images/indigo.png" paint="violet"><p>Indigo</p></li>
+		<li><img src = "images/violet.png" paint="indigo"><p>Violet</p></li>	
+		<li><img src = "images/eraser.jpg" paint="#fff" lineWidth="20"><p>In case you <br />make a mistake</p></li>
+	</ul>
+</div>
+	
+<section id = "sketch">
+	   <canvas id = "paint">
+			Your browser does not support the Canvas element!
+	   </canvas>
+</section>
