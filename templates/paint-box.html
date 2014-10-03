@@ -7,10 +7,10 @@
 	
 <form>
 	<label><em>Write in here:</em></label>
-	<input type = "text" id = "write" /><br /><br />
+	<input type = "text" id = "write" ng-model = "words"/><br /><br />
 </form>
 	
-<div id = "display"></div>
+<div id = "display">{{ words }}</div>
 	
 <div id = "colours">
 	<ul>
