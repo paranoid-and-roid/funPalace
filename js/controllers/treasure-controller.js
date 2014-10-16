@@ -1,5 +1,5 @@
 app
-	.controller('TreasureCtrl', ['$scope', function() {
+	.controller('TreasureCtrl', function() {
 		
 		//First, the function to drag the image across. This is based on thenewboston's HTML5 tutorials.		
 
@@ -40,9 +40,10 @@ app
 		});
 		
 		$("#roll_box").click(function() {
-			$("#gradient").show(4000);
+			$("#top").slideUp(1000);
+				$("#gradient").show(4000);
 		
-			setTimeout(function() {	
+		setTimeout(function() {	
 			$("#gradient").text("Almost there. Now all you have to do is click in here and we will reveal all!");
 			},4000);
 		});
@@ -51,17 +52,26 @@ app
 			disco();
 			
 			setTimeout(function() {
-			  $("#gradient").text("That's right! The song was called TWO PRINCES");
+			  $("#gradient").text("That's right! The song was called TWO PRINCES").css("background", "#f00").css("color", "#ff0");
 			},5000);
 			setTimeout(function() {
-			  $("#gradient").text("Thank you for playing! We'll have another musical question for you tomorrow");
+			  $("#gradient").text("Thank you for playing! We'll have another musical question for you shortly").css("background", "#ff0").css("color", "#f00");
 			},13000);	
 		});
 		
 		//The stickman figure is based on code from Introducing HTML5, by Bruce Lawson and Remy Sharp
 		
 		function disco() {
+			
+		$("#bottom").mouseenter(function() {
+			$("#disco").fadeIn();
+		});
+		$("#bottom").mouseleave(function() {
+			$("#disco").fadeOut();
+		});
+			
 		var discoSong =	document.getElementById("disco");
+			//$("#disco").show();
 			discoSong.volume = .5;
 			discoSong.play();
 		
@@ -548,5 +558,5 @@ app
 		}
 		
 		dragAndDrop();
-}]);
+});
 

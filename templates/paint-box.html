@@ -1,4 +1,4 @@
-<h1>The Paint Box</h1>
+<h2>The Paint Box</h2>
 	
 <div id = "intro">
 	<p>If you're feeling artistic, simply click your mouse into the canvas below, and get sketching!!</p>
@@ -7,7 +7,7 @@
 	
 <form>
 	<label><em>Write in here:</em></label>
-	<input type = "text" id = "write" ng-model = "words"/><br /><br />
+	<input type = "text" id = "write" ng-model = "words"/>
 </form>
 	
 <div id = "display">{{ words }}</div>
@@ -21,12 +21,12 @@
 		<li><img src = "images/blue.png" paint="#00f"><p>Blue</p></li>
 		<li><img src = "images/indigo.png" paint="violet"><p>Indigo</p></li>
 		<li><img src = "images/violet.png" paint="indigo"><p>Violet</p></li>	
-		<li><img src = "images/eraser.jpg" paint="#fff" lineWidth="20"><p>In case you <br />make a mistake</p></li>
+		<li><img src = "images/eraser.jpg" paint="#fff" lineWidth="40"><p>In case you <br />make a mistake</p></li>
 	</ul>
 </div>
 	
 <section id = "sketch">
-	   <canvas id = "paint">
+	   <canvas id = "paint" placeholder = "Write in this box">
 			Your browser does not support the Canvas element!
 	   </canvas>
 </section>

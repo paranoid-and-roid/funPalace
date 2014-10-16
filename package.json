@@ -1,0 +1,23 @@
+{
+  "name": "the-fun-factory",
+  "version": "1.0.0",
+  "description": "A games application, which includes a paint Box and a Musical Treasure Hunt",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paranoid-and-roid/funPalace.git"
+  },
+  "author": "Patrick Dunlevy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paranoid-and-roid/funPalace/issues"
+  },
+  "homepage": "https://github.com/paranoid-and-roid/funPalace",
+  "devDependencies": {
+    "body-parser": "~1.9.0",
+    "express": "~4.9.7"
+  }
+}
