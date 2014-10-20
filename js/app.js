@@ -1,10 +1,10 @@
 var app = angular.module('myApp', ['ngRoute'])
 
-	//.config(function($routeProvider, $locationProvider) {		
-		// $locationProvider.html5Mode(true);
+	.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {		
+		 $locationProvider.html5Mode(true);
 		
 	
-	.config(function($routeProvider) {		
+	//.config(function($routeProvider) {		
 	
 		$routeProvider
 			.when('/', {
@@ -22,4 +22,5 @@ var app = angular.module('myApp', ['ngRoute'])
 			.otherwise({
 				redirectTo: '/'
 			});
-	});
+	//});
+	}]);
