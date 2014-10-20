@@ -9,12 +9,14 @@ app.get('/', function(req, res) {
 	res.sendFile(__dirname + '/index.html');
 });
 
-app.use('/js', express.static(__dirname + '/js')); //This doesn't work
+app.use('/js', express.static(__dirname + '/js'));
 app.use('/css', express.static(__dirname + '/css'));
 app.use('/fonts', express.static(__dirname + '/fonts'));
-app.use('/templates', express.static(__dirname + '/templates'));
-app.use('/images', express.static(__dirname + '/images'));
 app.use('/music', express.static(__dirname + '/music'));
+app.use('/images', express.static(__dirname + '/images'));
+app.use('/templates', express.static(__dirname + '/templates'));
 
-app.listen(8080);
-console.log("Listening on port 8080");
+var port = process.env.PORT || 8080;
+app.listen(port, function() {
+	console.log("Listening on port " + port);
+});
