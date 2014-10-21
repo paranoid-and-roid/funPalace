@@ -10,9 +10,11 @@
 	<body>
 		
 		<div id = "wrapper" ng-controller = "MainCtrl">
-			
+		
+		<header>	
 		<h1>The Fun Factory</h1>								
-	
+		</header>
+		
 		<nav>			
 			<ul>
 			    <li ng-class="{ active: isActive('/') }"><a href="/">Home</a></li>
@@ -24,6 +26,13 @@
 		<ng-view></ng-view>
 		
 		</div>
+		
+		<footer>
+			<p>Copyright &copy;2013</p>
+			<p>You can examine all the code for this page at my github, which can be accessed <a href = "https://github.com/paranoid-and-roid/funPalace" class = "pink">here</a></p>
+		</footer>
+		
+		
 		
 		<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
         <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js'></script>

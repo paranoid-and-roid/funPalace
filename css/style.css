@@ -11,10 +11,26 @@ body 	{
 		background: #fff;
 		padding-bottom: 50px;
 		overflow: hidden;
-		border-radius: 4px;
+		border-top-right-radius: 4px;
+		border-top-left-radius: 4px;
 		width: 1100px;
 		margin: 0 auto;		
 		}
+		
+header 	{
+		border-top-right-radius: 4px;
+		border-top-left-radius: 4px;
+		background: #c00;
+		}
+		
+h1 {
+		text-align: center;
+		font-family: AltamonteNF, sans-serif;
+		color: #ff0;		
+		padding: 20px 0;
+		margin: 0 0 10px;
+		font-size: 300%;
+}	
 
 nav 	{
 		width: 900px;
@@ -47,18 +63,7 @@ nav li	{
 			src: local('AltamonteNF'), url('../fonts/AltamonteNF.ttf') format('truetype'); 
 			}
 		}
-		
-h1 {
-		text-align: center;
-		font-family: AltamonteNF, sans-serif;
-		color: #ff0;
-		background: #c00;
-		border-radius: 4px;
-		padding: 20px 0;
-		margin: 0 0 10px;
-		font-size: 300%;
-}		
-		
+				
 nav a 	{
 		text-decoration: none;
 		color: #ff0;				
@@ -276,4 +281,24 @@ img#doctors
 		display: none;
 		width: 100%;
 		margin: 0 auto;
+		}
+		
+footer {
+		width: 1100px;
+		text-align: center;
+		color: #ff0;
+		background: #c00;
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+		padding: 20px 0;
+		margin: 0 auto;
+}
+		
+.pink	{
+		padding: 7px;
+		background: pink;
+		border-radius: 4px;
+		color: #f00;
+		margin-left: 4px;
+		text-decoration: none;
 		}
