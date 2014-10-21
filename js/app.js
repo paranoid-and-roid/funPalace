@@ -1,15 +1,11 @@
 var app = angular.module('myApp', ['ngRoute'])
 
 	.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {		
-		 $locationProvider.html5Mode(true);
-		
-	
-	//.config(function($routeProvider) {		
+		 $locationProvider.html5Mode(true);	
 	
 		$routeProvider
 			.when('/', {
-				templateUrl: './templates/home.html',
-				//controller: 'HomeCtrl'
+				templateUrl: '/templates/home.html'
 			})
 			.when('/paint-box', {
 				templateUrl: '/templates/paint-box.html',
@@ -22,5 +18,4 @@ var app = angular.module('myApp', ['ngRoute'])
 			.otherwise({
 				redirectTo: '/'
 			});
-	//});
 	}]);

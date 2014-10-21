@@ -3,9 +3,9 @@ body 	{
 		font: 67.2% Arial, Helvetica, sans-serif;
 		font-size: 16px;
 		cursor: default;
-		width: 1327px;;
+		width: 1327px;
 		}
-
+		
 #wrapper 
 		{
 		background: #fff;
@@ -16,21 +16,21 @@ body 	{
 		width: 1100px;
 		margin: 0 auto;		
 		}
-		
+				
 header 	{
 		border-top-right-radius: 4px;
 		border-top-left-radius: 4px;
 		background: #c00;
 		}
 		
-h1 {
+h1 		{
 		text-align: center;
 		font-family: AltamonteNF, sans-serif;
 		color: #ff0;		
 		padding: 20px 0;
 		margin: 0 0 10px;
 		font-size: 300%;
-}	
+		}	
 
 nav 	{
 		width: 900px;
@@ -52,7 +52,7 @@ nav li	{
 		font-family: AltamonteNF, sans-serif;
 		font-size: 25px;
 		padding: 10px 25px;		
-		background: #f00;
+		background: #c00;
 		border-radius: 4px;
 		}	
 
@@ -69,25 +69,62 @@ nav a 	{
 		color: #ff0;				
 		}
 		
-nav li:hover:not(.active)
+nav li:hover:not(.clicked)
 		{
-		background: #c00;
+		background: #900;
 		}
 		
-.active {
-		background-color: #c00;
-		}
-h2	
+.clicked 
 		{
+		background-color: #900;
+		}
+		
+h2		{
 		text-align: center;
 		color: #c00;
 		font-size: 200%;
 		margin: 20px 0 0;
 		}
 		
-				
-/*The Painting Canvas*/
+/*The Home Page*/
 
+#fun	{
+		text-align: center;
+		width: 50%;
+		margin: 40px auto;
+		font-size: 120%;		
+		}
+		
+#fun p	{
+		margin: 20px 0;
+		}
+		
+#paint_pots, #music
+		{
+		width: 80%;
+		margin: 20px auto;
+		font-size: 120%;
+		}
+		
+#paint_pots img, #paint_pots p, #music img, #music p
+		{
+		float: left;
+		margin: 30px 10px;
+		}
+		
+#paint_pots p, #music p
+		{
+		width: 200px;
+		text-align: center;
+		padding-top: 50px;
+		}
+		
+#music img:first-child
+		{
+		margin-top: 35px;
+		}
+						
+/*The Painting Canvas*/
 
 #sketch {
 		width: 900px;
@@ -135,12 +172,13 @@ input#write
 		width: 120px;
 		}	
 		
-#colours ul {
+#colours ul 
+		{
 		position: relative;
 		top: 0;
 		left: 0;
 		z-index: 1000;
-}
+		}
 		
 #colours li
 		{
@@ -168,7 +206,8 @@ img#doctors
 		height: 151px;
 		}
 
-#picture{
+#picture
+		{
 		float: left;
 		width: 180px;
 		margin: 20px 0 0 120px;
@@ -274,7 +313,7 @@ img#doctors
 		width: 700px;
 		margin: 0 auto;
 		float: right;
-		margin: 20px 30px;	
+		margin: 20px 30px 150px;	
 		}
 		
 #disco {
@@ -294,11 +333,12 @@ footer {
 		margin: 0 auto;
 }
 		
-.pink	{
+.yellow	{
 		padding: 7px;
-		background: pink;
+		background: #fe0;
 		border-radius: 4px;
 		color: #f00;
 		margin-left: 4px;
 		text-decoration: none;
+		font-weight: bold;
 		}

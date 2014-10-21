@@ -4,15 +4,6 @@ var express 	= 	require('express'),
 	
 app.use(bodyParser.urlencoded({	extended: true }));
 app.use(bodyParser.json());
-/*
-app.get('/', function(req, res) {
-	res.sendFile(__dirname + '/index.html');
-});
-app.get('/templates/:name', function(req, res) {
-	var name = req.params.name;
-	res.sendFile(__dirname + '/templates/' + name);
-});
-*/
 
 app.use('/js', express.static(__dirname + '/js'));
 app.use('/css', express.static(__dirname + '/css'));

@@ -17,9 +17,9 @@
 		
 		<nav>			
 			<ul>
-			    <li ng-class="{ active: isActive('/') }"><a href="/">Home</a></li>
-			    <li ng-class="{ active: isActive('/paint-box') }"><a href="/paint-box">Paint Box</a></li>
-			    <li ng-class="{ active: isActive('/treasure-hunt') }"><a href="/treasure-hunt">Treasure Hunt</a></li>
+			    <li ng-class="{ clicked: isActive('/') }"><a href="/">Home</a></li>
+			    <li ng-class="{ clicked: isActive('/paint-box') }"><a href="/paint-box">Paint Box</a></li>
+			    <li ng-class="{ clicked: isActive('/treasure-hunt') }"><a href="/treasure-hunt">Treasure Hunt</a></li>
 			</ul>												
 		</nav>
 		
@@ -28,18 +28,15 @@
 		</div>
 		
 		<footer>
-			<p>Copyright &copy;2013</p>
-			<p>You can examine all the code for this page at my github, which can be accessed <a href = "https://github.com/paranoid-and-roid/funPalace" class = "pink">here</a></p>
+			<p>Copyright &copy; 2013</p>
+			<p>You can examine all the code for this page at my github, which can be accessed <a href = "https://github.com/paranoid-and-roid/funPalace" class = "yellow">here</a></p>
 		</footer>
-		
-		
 		
 		<script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
         <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js'></script>
         <script src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.js'></script>        
 		<script src="js/app.js"></script>
 		<script src="js/controllers/main-controller.js"></script>
-		<script src="js/controllers/home-controller.js"></script>
 		<script src="js/controllers/paint-controller.js"></script>
 		<script src="js/controllers/treasure-controller.js"></script>
 	</body>
