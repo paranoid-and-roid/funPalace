@@ -16,16 +16,16 @@ body 	{
 		margin: 0 auto;		
 		}
 
-nav {
-	width: 900px;
-	margin: auto;
-}
+nav 	{
+		width: 900px;
+		margin: auto;
+		}
 		
-ul {
-	padding: 0;
-	width: 1100px;
-	margin: auto;
-}
+ul 		{
+		padding: 0;
+		width: 1100px;
+		margin: auto;
+		}
 		
 nav li	{	
 		display: inline-block;
@@ -42,11 +42,11 @@ nav li	{
 
 @media screen {		
 	@font-face 
-		{
+			{
 			font-family: AltamonteNF;
 			src: local('AltamonteNF'), url('../fonts/AltamonteNF.ttf') format('truetype'); 
+			}
 		}
-	}
 		
 h1 {
 		text-align: center;
